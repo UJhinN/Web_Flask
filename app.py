@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from models import db, User, Card
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 
-app = Flask(__name__, static_folder='static', template_folder='templates')
+app = Flask(__name__, static_folder='assets/static', template_folder='templates')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'your_secret_key_here'
 login_manager = LoginManager(app)
@@ -14,8 +14,8 @@ login_manager.init_app(app)
 db.init_app(app)
 
 @app.route('/')
-def mysteriousr():
-    return render_template("mysterious.html")
+def index():
+    return render_template("index.html")
 
 @login_manager.user_loader
 def load_user(user_id):
