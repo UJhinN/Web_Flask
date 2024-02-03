@@ -6,10 +6,10 @@
 
 /* Colors */
 :root {
-  --color-default: #9a0000;
-  --color-primary: #682e2e;
-  --color-secondary: #630000;
-  --color-tri: #682e2e;
+  --color-default: #ffffff;
+  --color-primary: #1b1b25;
+  --color-secondary: #930505;
+  --color-tri: #ffffff;
 }
 
 /* Smooth scroll behavior */
@@ -23,7 +23,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #451818;
+  background-color: #1d1d24;
 }
 
 a {
@@ -172,7 +172,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #110303;
+  background: #0a090c;;
   height: 40px;
   font-size: 18px;
   transition: all 0.5s;
@@ -225,7 +225,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: #000;
+  background-color: #00010b;
 }
 
 .header.sticked {
@@ -234,7 +234,7 @@ section {
   right: 0;
   left: 0;
   height: 70px;
-  box-shadow: 0px 2px 20px #1f0707;
+  box-shadow: 0px 2px 20px #0a0202;
 }
 
 .header .logo img {
@@ -334,7 +334,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #ff0000;
+    color: #9a0000;
   }
 
   .navbar .dropdown ul {
@@ -557,11 +557,11 @@ section {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #d21212;
+  color: #ffffff;
 }
 
 .main-top p {
-  color: #d21212;
+  color: #ffffff;
   font-weight: 400;
   margin-bottom: 30px;
 }
