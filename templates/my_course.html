@@ -30,11 +30,6 @@
     <!--  Header -->
     <section id="topbar" class="topbar d-flex align-items-center">
         <div class="container d-flex justify-content-center justify-content-md-between">
-            <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-envelope d-flex align-items-center"><a
-                        href="mailto:valorantrama9.1@gmail.com">valorantrama9.1@gmail.com</a></i>
-                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+6665 624 1293</span></i>
-            </div>
             <div class="social-links d-none d-md-flex align-items-center">
                 <a href="https://twitter.com/Xhi3r" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100015127746814" class="facebook" target="_blank"><i
@@ -55,13 +50,6 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="#main-top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#market">Market</a></li>
-                    <li><a href="#course">Course</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#posts">Blog</a></li>
-                    <li><a href="#faq">Faq</a></li>
-                    <li><a href="#contact">Contact</a></li>
                     {% if current_user.is_authenticated %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -70,7 +58,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="{{ url_for('profile') }}">Profile</a></li>
                             <li><a href="{{ url_for('edit_profile') }}">Edit Profile</a></li>
-                            <li><a href="{{ url_for('my_course') }}">My Course</a></li>
+                            <li><a href="{{ url_for('my_course') }}">History</a></li>
                             <li><a href="{{ url_for('logout') }}">Logout</a></li>
                         </ul>
                     </li>
@@ -89,7 +77,7 @@
         <section class="my-course" id="my-course">
             <div class="container">
                 <div class="section-header">
-                    <h2>My Course</h2>
+                    <h2>History</h2>
                 </div>
             </div>
         </section>
