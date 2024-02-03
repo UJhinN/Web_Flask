@@ -1006,7 +1006,7 @@ section {
 
 .Story .Story-wrap .Story-info {
   padding: 25px 20px;
-  background-color: #7b7979;
+  background-color: #12131c;
   position: relative;
   border-top: 1px solid #f3f3f3;
   z-index: 2;
@@ -1383,11 +1383,6 @@ section {
   box-sizing: border-box;
 }
 
-.product-name {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
 
 .product-features {
   list-style-type: none;
@@ -1400,31 +1395,7 @@ section {
 }
 
 
-product-price {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
-}
 
-.original-price {
-  text-decoration: line-through;
-  color: #999;
-  margin-right: 8px;
-}
-
-.discounted-price {
-  font-size: 36px;
-  color: #1d64e7;
-}
-
-.discount-percentage {
-  background-color: #1d64e7;
-  color: #fff;
-  padding: 2px 4px;
-  font-size: 22px;
-  border-radius: 4px;
-  margin-left: 8px;
-}
 
 .add-to-cart-button {
   background-color: #1d64e7;
