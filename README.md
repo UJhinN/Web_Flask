@@ -1,4 +1,4 @@
-Hello, am Xhi3r . this is my so clean website for my shop >!!
+Hello. this website for collection of stories or legends in Thailand in each region!!
 
 Run this project with flask
 
