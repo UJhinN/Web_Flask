@@ -98,6 +98,15 @@ def register():
         return redirect(url_for('login'))
 
     return render_template('register.html')
+
+@app.route('/blog')
+def blog():
+    return render_template("blog.html")
+
+@app.route('/my_course')
+def my_course():
+    return render_template("my_course.html")
+
 @app.route('/market_detail_1')
 def market_1():
     return render_template("market/market_detail_1.html")

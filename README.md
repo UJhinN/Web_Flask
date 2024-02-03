@@ -1,4 +1,4 @@
-Hello. this website for collection of stories or legends in Thailand in each region!!
+Hello. this website for Ghost Story Website in Thailand in each region!!
 
 Run this project with flask
 
