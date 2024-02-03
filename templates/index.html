@@ -50,7 +50,7 @@
                 <ul>
                     <li><a href="#main-top">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#market">Market</a></li>
+                    <li><a href="#Story">Story</a></li>
                     <li><a href="#contact">Contact</a></li>
                     {% if current_user.is_authenticated %}
                     <li class="dropdown">
@@ -154,56 +154,56 @@
 </section> <!--end about-->
 
 
-        <!-- market -->
+        <!-- Story -->
 
-        <section id="market" class="market">
+        <section id="Story" class="Story">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
-                    <h2>เรื่องเล่า</h2>
+                    <h2>Story</h2>
                     <p>ประเพณี วัฒนธรรม แต่ละภูมิภาค ก็จะมีเรื่องราวเกี่ยวกับผีเข้ามามีส่วนร่วม</p>
                 </div>
-                <div class="market-isotope" data-market-filter="*" data-market-layout="masonry"
-                    data-market-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+                <div class="Story-isotope" data-Story-filter="*" data-Story-layout="masonry"
+                    data-Story-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="row gy-4 market-container">
-                        <div class="col-xl-4 col-md-6 market-item filter-product">
-                            <div class="market-wrap">
-                                <a href="{{ url_for('market_1') }}""
-                                    class="glightbox"><img src="{{ url_for('static', filename='img/market/srikhun.png') }}" class="img-fluid"
+                    <div class="row gy-4 Story-container">
+                        <div class="col-xl-4 col-md-6 Story-item filter-product">
+                            <div class="Story-wrap">
+                                <a href="{{ url_for('Story_1') }}""
+                                    class="glightbox"><img src="{{ url_for('static', filename='img/Story/srikhun.png') }}" class="img-fluid"
                                         alt=""></a>
-                                <div class="market-info">
-                                    <h4><a href="{{ url_for('market_1') }}" title="More Details">ตำนานของวัดศรีชุม
+                                <div class="Story-info">
+                                    <h4><a href="{{ url_for('Story_1') }}" title="More Details">ตำนานของวัดศรีชุม
                                             </a></h4>
                                     <p><strong>วัดศรีชุม เป็นโบราณสถานสำคัญในเขตอุทยานประวัติศาสตร์สุโขทัย วัดนี้เป็นที่ประดิษฐานองค์พระพุทธรูปอยู่ในมณฑปชื่อว่า พระพุทธอจนะ เป็นที่เลื่องลือถึงความศักดิ์สิทธิ์ และสวยงามมากๆ มีเอกลักษณ์ชวนให้นักท่องเที่ยวมาเที่ยวชม และสักการะอย่างไม่ขาดสาย</strong></p>
                                 </div>
                             </div>
-                        </div><!-- End market Item -->
-                        <div class="col-xl-4 col-md-6 market-item filter-product">
-                            <div class="market-wrap">
-                                <a href="{{ url_for('market_2') }}" 
-                                    class="glightbox"><img src="{{ url_for('static', filename='img/market/product-2.jpg') }}" class="img-fluid"
+                        </div><!-- End Story Item -->
+                        <div class="col-xl-4 col-md-6 Story-item filter-product">
+                            <div class="Story-wrap">
+                                <a href="{{ url_for('Story_2') }}" 
+                                    class="glightbox"><img src="{{ url_for('static', filename='img/Story/product-2.jpg') }}" class="img-fluid"
                                         alt=""></a>
-                                <div class="market-info">
-                                    <h4><a href="{{ url_for('market_2') }}" title="More Details">RK61 Hot-Swap</a></h4>
+                                <div class="Story-info">
+                                    <h4><a href="{{ url_for('Story_2') }}" title="More Details">RK61 Hot-Swap</a></h4>
                                     <p>คีย์บอร์โสุดโหด นัมเบอร์โหด นัมเบอร์ตึง พร้อมลายเซ็น จาก <strong>Xhi3r</strong>
                                     </p>
                                 </div>
                             </div>
-                        </div><!-- End market Item -->
+                        </div><!-- End Story Item -->
 
-                        <div class="col-xl-4 col-md-6 market-item filter-product">
-                            <div class="market-wrap">
-                                <a href="{{ url_for('market_3') }}" 
-                                    class="glightbox"><img src="{{ url_for('static', filename='img/market/product-3.jpg') }}" class="img-fluid"
+                        <div class="col-xl-4 col-md-6 Story-item filter-product">
+                            <div class="Story-wrap">
+                                <a href="{{ url_for('Story_3') }}" 
+                                    class="glightbox"><img src="{{ url_for('static', filename='img/Story/product-3.jpg') }}" class="img-fluid"
                                         alt=""></a>
-                                <div class="market-info">
-                                    <h4><a href="{{ url_for('market_3') }}" title="More Details">เก้าอี้สุดโหด
+                                <div class="Story-info">
+                                    <h4><a href="{{ url_for('Story_3') }}" title="More Details">เก้าอี้สุดโหด
                                             จากเทพสงความมาลี</a></h4>
                                     <p>เก้าอี้ที่จะนำคุณสู่การเป็นเทพสงครามที่แท้จริง พร้อมระบบโยกเยกเมื่อคุณขยับตัว
                                         และยังทำให้คุณปัดขวาเพื่อหวังผลได้ดียิ่งขึ้น</p>
                                 </div>
                             </div>
-                        </div><!-- End market Item -->
+                        </div><!-- End Story Item -->
                     </div>
                 </div>
         </section>
@@ -242,7 +242,7 @@
                     <ul>
                         <li><a href="{{ url_for('index')}}">Home</a></li>
                         <li><a href="#about">About </a></li>
-                        <li><a href="#marker">Market</a></li>
+                        <li><a href="#marker">Story</a></li>
                         <li><a href="#course">Course</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#contact">Contact</a></li>

@@ -955,16 +955,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# market Section
+# Story Section
 --------------------------------------------------------------*/
-.market .market-flters {
+.Story .Story-flters {
   padding: 0 0 20px 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
-.market .market-flters li {
+.Story .Story-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -976,35 +976,35 @@ section {
 }
 
 
-.market .market-flters li:first-child {
+.Story .Story-flters li:first-child {
   margin-left: 0;
 }
 
-.market .market-flters li:last-child {
+.Story .Story-flters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .market .market-flters li {
+  .Story .Story-flters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.market .market-wrap {
+.Story .Story-wrap {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 100%;
   overflow: hidden;
 }
 
-.market .market-wrap img {
+.Story .Story-wrap img {
   transition: 0.3s;
   position: relative;
   z-index: 1;
 }
 
-.market .market-wrap .market-info {
+.Story .Story-wrap .Story-info {
   padding: 25px 20px;
   background-color: #7b7979;
   position: relative;
@@ -1012,58 +1012,58 @@ section {
   z-index: 2;
 }
 
-.market .market-wrap .market-info h4 {
+.Story .Story-wrap .Story-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.market .market-wrap .market-info h4 a {
+.Story .Story-wrap .Story-info h4 a {
   color: var(--color-default);
   transition: 0.3s;
 }
 
-.market .market-wrap .market-info h4 a:hover {
+.Story .Story-wrap .Story-info h4 a:hover {
   color: var(--color-primary);
 }
 
-.market .market-wrap .market-info p {
+.Story .Story-wrap .Story-info p {
   color: #6c757d;
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.market .market-wrap:hover img {
+.Story .Story-wrap:hover img {
   transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
-# market Details Section
+# Story Details Section
 --------------------------------------------------------------*/
-.market-details .market-details-slider img {
+.Story-details .Story-details-slider img {
   width: 100%;
 }
 
-.market-details .market-details-slider .swiper-pagination .swiper-pagination-bullet {
+.Story-details .Story-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
 
-.market-details .market-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.Story-details .Story-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
 
-.market-details .swiper-button-prev,
-.market-details .swiper-button-next {
+.Story-details .swiper-button-prev,
+.Story-details .swiper-button-next {
   width: 48px;
   height: 48px;
 }
 
-.market-details .swiper-button-prev:after,
-.market-details .swiper-button-next:after {
+.Story-details .swiper-button-prev:after,
+.Story-details .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 24px;
@@ -1076,20 +1076,20 @@ section {
   transition: 0.3s;
 }
 
-.market-details .swiper-button-prev:hover:after,
-.market-details .swiper-button-next:hover:after {
+.Story-details .swiper-button-prev:hover:after,
+.Story-details .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 575px) {
 
-  .market-details .swiper-button-prev,
-  .market-details .swiper-button-next {
+  .Story-details .swiper-button-prev,
+  .Story-details .swiper-button-next {
     display: none;
   }
 }
 
-.market-details .market-info h3 {
+.Story-details .Story-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1097,7 +1097,7 @@ section {
   position: relative;
 }
 
-.market-details .market-info h3:after {
+.Story-details .Story-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -1108,27 +1108,27 @@ section {
   bottom: 0;
 }
 
-.market-details .market-info ul {
+.Story-details .Story-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.market-details .market-info ul li {
+.Story-details .Story-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
   font-size: 16px;
 }
 
-.market-details .market-info ul strong {
+.Story-details .Story-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: #9c9c9c;
   font-size: 12px;
 }
 
-.market-details .market-info .btn-visit {
+.Story-details .Story-info .btn-visit {
   padding: 8px 40px;
   background: var(--color-primary);
   color: #fff;
@@ -1136,21 +1136,21 @@ section {
   transition: 0.3s;
 }
 
-.market-details .market-info .btn-visit:hover {
+.Story-details .Story-info .btn-visit:hover {
   background: #00519d;
 }
 
-.market-details .market-description h2 {
+.Story-details .Story-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.market-details .market-description p {
+.Story-details .Story-description p {
   padding: 0;
 }
 
-.market-details .market-description .testimonial-item {
+.Story-details .Story-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: white;
@@ -1158,7 +1158,7 @@ section {
   margin-bottom: 50px;
 }
 
-.market-details .market-description .testimonial-item .testimonial-img {
+.Story-details .Story-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid #fff;
@@ -1166,33 +1166,33 @@ section {
   margin: 0 10px 0 0;
 }
 
-.market-details .market-description .testimonial-item h3 {
+.Story-details .Story-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.market-details .market-description .testimonial-item h4 {
+.Story-details .Story-description .testimonial-item h4 {
   font-size: 14px;
   color: #6c757d;
   margin: 0;
 }
 
-.market-details .market-description .testimonial-item .quote-icon-left,
-.market-details .market-description .testimonial-item .quote-icon-right {
+.Story-details .Story-description .testimonial-item .quote-icon-left,
+.Story-details .Story-description .testimonial-item .quote-icon-right {
   color: #00109d;
   font-size: 26px;
   line-height: 0;
 }
 
-.market-details .market-description .testimonial-item .quote-icon-left {
+.Story-details .Story-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.market-details .market-description .testimonial-item .quote-icon-right {
+.Story-details .Story-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1200,7 +1200,7 @@ section {
   transform: scale(-1, -1);
 }
 
-.market-details .market-description .testimonial-item p {
+.Story-details .Story-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
@@ -1351,7 +1351,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Market item
+# Story item
 --------------------------------------------------------------*/
 .product-container {
   align-items: center;

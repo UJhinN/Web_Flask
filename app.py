@@ -107,17 +107,17 @@ def blog():
 def my_course():
     return render_template("my_course.html")
 
-@app.route('/market_detail_1')
-def market_1():
-    return render_template("market/market_detail_1.html")
+@app.route('/Story_detail_1')
+def Story_1():
+    return render_template("Story/Story_detail_1.html")
 
-@app.route('/market_detail_2')
-def market_2():
-    return render_template("market/market_detail_2.html")
+@app.route('/Story_detail_2')
+def Story_2():
+    return render_template("Story/Story_detail_2.html")
 
-@app.route('/market_detail_3')
-def market_3():
-    return render_template("market/market_detail_3.html")
+@app.route('/Story_detail_3')
+def Story_3():
+    return render_template("Story/Story_detail_3.html")
 
 if __name__ == "__main__":
     with app.app_context():
