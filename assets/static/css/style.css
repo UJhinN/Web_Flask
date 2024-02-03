@@ -1,14 +1,15 @@
 :root {
-  --font-default: "Octavio Pardo";
-  --font-primary: "Octavio Pardo" ;
-  --font-secondary: "Octavio Pardo";
+  --font-default: "Protest Revolution";
+  --font-primary: "Protest Revolution" ;
+  --font-secondary: "Protest Revolution";
 }
 
 /* Colors */
 :root {
-  --color-default: #0c0814;
-  --color-primary: #0c0814;
-  --color-secondary: #615f5f;
+  --color-default: #9a0000;
+  --color-primary: #682e2e;
+  --color-secondary: #630000;
+  --color-tri: #682e2e;
 }
 
 /* Smooth scroll behavior */
@@ -22,7 +23,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #ffffff;
+  background-color: #451818;
 }
 
 a {
@@ -53,7 +54,7 @@ section {
 }
 
 .sections-bg {
-  background-color: #f6f6f6;
+  background-color: #360d0d;
 }
 
 .section-header {
@@ -75,7 +76,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background: var(--color-tri);
   left: 0;
   right: 0;
   bottom: 0;
@@ -84,65 +85,10 @@ section {
 
 .section-header p {
   margin-bottom: 0;
-  color: #6f6f6f;
+  color: #9a0000;
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs .page-header {
-  padding: 60px 0 60px 0;
-  min-height: 20vh;
-  position: relative;
-  background-color: var(--color-primary);
-}
 
-.breadcrumbs .page-header h2 {
-  font-size: 56px;
-  font-weight: 500;
-  color: #fff;
-  font-family: var(--font-secondary);
-}
-
-.breadcrumbs .page-header p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.breadcrumbs nav {
-  background-color: #f6f6f6;
-  padding: 20px 0;
-}
-
-.breadcrumbs nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--color-default);
-}
-
-.breadcrumbs nav ol a {
-  color: var(--color-primary);
-  transition: 0.3s;
-}
-
-.breadcrumbs nav ol a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumbs nav ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs nav ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: var(--color-secondary);
-  content: "/";
-}
 
 /*--------------------------------------------------------------
 # Scroll top button
@@ -226,11 +172,11 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #2b2f3b;
+  background: #110303;
   height: 40px;
   font-size: 18px;
   transition: all 0.5s;
-  color: #fff;
+  color: #9a0000;
   padding: 0;
 }
 
@@ -265,7 +211,7 @@ section {
 }
 
 .topbar .social-links a {
-  color: rgba(255, 255, 255, 0.7);
+  color: #9a0000;
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
@@ -279,7 +225,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  background-color: #000;
 }
 
 .header.sticked {
@@ -288,7 +234,7 @@ section {
   right: 0;
   left: 0;
   height: 70px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 20px #1f0707;
 }
 
 .header .logo img {
@@ -301,12 +247,12 @@ section {
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.8px;
-  color: #fff;
+  color: #9a0000;
   font-family: var(--font-primary);
 }
 
 .header .logo h1 span {
-  color: #f96f59;
+  color: #9a0000;
 }
 
 .sticked-header-offset {
@@ -351,7 +297,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 22px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: d21212;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -388,7 +334,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #ff0000;
   }
 
   .navbar .dropdown ul {
@@ -401,8 +347,8 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(22, 24, 27, 0.25);
+    background: #ff0000;
+    box-shadow: 0px 0px 30px rgb(26, 26, 27);
     transition: 0.3s;
     border-radius: 4px;
   }
@@ -416,7 +362,7 @@ section {
     font-size: 18px;
     text-transform: none;
     font-weight: 600;
-    color: #3b3f46;
+    color: #b1b1b1;
   }
 
   .navbar .dropdown ul a i {
@@ -523,7 +469,7 @@ section {
 
   .navbar .getstarted,
   .navbar .getstarted:focus {
-    background: var(--color-primary);
+    background: var(--color-tri);
     padding: 8px 20px;
     border-radius: 4px;
     margin: 15px;
@@ -611,11 +557,11 @@ section {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #fff;
+  color: #d21212;
 }
 
 .main-top p {
-  color: rgba(255, 255, 255, 0.6);
+  color: #d21212;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -779,15 +725,14 @@ section {
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 20px;
-  font-family: var(--font-secondary);
-  color: #000000;
+  color: #ba040400;
 }
 
 .about .call-us {
   left: 10%;
   right: 10%;
   bottom: 0;
-  background-color: #ffffff;
+  background-color: #d50202;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
   padding: 20px;
   text-align: center;
@@ -1061,7 +1006,7 @@ section {
 
 .market .market-wrap .market-info {
   padding: 25px 20px;
-  background-color: #fff;
+  background-color: #7b7979;
   position: relative;
   border-top: 1px solid #f3f3f3;
   z-index: 2;
