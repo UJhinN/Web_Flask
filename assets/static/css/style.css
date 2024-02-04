@@ -1717,15 +1717,15 @@ a.backtomenu-btn:hover{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 121, 121, 0.2);
   font-size: 24px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 142, 142, 0.7);
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: #00ff2a;
+  color: #aa0505;
   border-color: #fff;
 }
 
@@ -1764,14 +1764,14 @@ a.backtomenu-btn:hover{
 }
 
 .footer .footer-links ul a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(210, 58, 58, 0.7);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: #00ff2a;
+  color: #a20202;
 }
 
 .footer .footer-contact p {
@@ -1784,5 +1784,5 @@ a.backtomenu-btn:hover{
 }
 .footer .footer-contact a:hover {
   line-height: 26px;
-  color: #00ff2a;
+  color: #a20202;
 }
