@@ -175,6 +175,7 @@
                                     <h4><a href="{{ url_for('Story_1') }}" title="More Details">ธี่หยด
                                             </a></h4>
                                     <p><strong>เรื่องราวธี่หยด เสียงธี่หยดนั้นถูกอธิบายว่าเป็นเสียงคล้ายกับเสียงสวดมนต์ในภาษามอญโบราณ ฟังแล้วคล้ายกับเสียงโหยหวน ดังมาจากห้องของคนที่โดนผีเข้าสิง เสียงธี่หยดนั้นมักจะได้ยินในเวลากลางคืน และมักมาพร้อมกับเหตุการณ์ประหลาดต่าง ๆ </strong></p>
+                                    <a href="{{ url_for('Story_1') }}" class="btn btn-primary btn-block" title="Read More">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -187,6 +188,7 @@
                                     <h4><a href="{{ url_for('Story_2') }}" title="More Details">ผีตายโหง วิญญาณอาฆาต</a></h4>
                                     <p><strong>ความเชื่อเรื่องผีตายโหงมีปรากฏอยู่ในหลายวัฒนธรรมทั่วโลก ในประเทศไทยเองก็มี ความเชื่อเรื่องผีตายโหงอยู่อย่างแพร่หลาย มักมีการเล่าขานเรื่องผีตายโหงตามสถานที่ต่างๆ เช่น บ้านร้าง ป่าช้า หรือริมทาง เป็นต้น</strong>
                                     </p>
+                                    <a href="{{ url_for('Story_2') }}" class="btn btn-primary btn-block" title="Read More">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -198,6 +200,7 @@
                                 <div class="Story-info">
                                     <h4><a href="{{ url_for('Story_3') }}" title="More Details">ผีกระสือ</a></h4>
                                     <p>ผีกระสือ เป็นผีชนิดหนึ่งที่เชื่อว่าเป็นผีผู้หญิงที่ตายแล้ว มักจะเป็นผู้หญิงที่ตายทั้งกลม หรือตายจากการถูกสาปแช่ง โดยเชื่อว่าวิญญาณของเธอจะออกมาหากินในเวลากลางคืนลักษณะของกระสือจะเหมือนกับผู้หญิงธรรมดาทั่วไป แต่จะมีไส้ห้อยออกมาจากท้อง</p>
+                                    <a href="{{ url_for('Story_3') }}" class="btn btn-primary btn-block" title="Read More">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -211,6 +214,7 @@
                             <div class="Story-info">
                                 <h4><a href="{{ url_for('Story_4') }}" title="More Details">ผีพราย</a></h4>
                                 <p><strong>ผีพราย ส่วนใหญ่มีถิ่นที่อยู่อยู่ในน้ำมากกว่าบนบก ส่วนใหญ่มักมีที่มาจากการหมักหมมของซากพืชหรือสิ่งมีชีวิตขนาดเล็ก ๆ ดวงจิตวิญญาณนี้มักแสดงตนมีลักษณะเป็นผู้หญิงใส่เสื้อสีขาว เป็นดวงไฟเรืองแสง มักอยู่ในคลองหรือแม่น้ำที่มีผู้เสียชีวิตมากที่สุด</strong></p>
+                                <a href="{{ url_for('Story_4') }}" class="btn btn-primary btn-block" title="Read More">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -222,6 +226,7 @@
                             <div class="Story-info">
                                 <h4><a href="{{ url_for('Story_5') }}" title="More Details">ผีตายทั้งกลม</a></h4>
                                 <p><strong>ปรากฏเหตุการณ์ความเฮี้ยนของวิญญาณแม่ลูกที่จำต้องจากโลกไปพร้อมกัน  เพราะข่าวสารชาวบ้านเรื่องความเฮี้ยนของผีตายทั้งกลมนั้นยังคงมีมาอย่างต่อเนื่อง หญิงสาวที่เสียชีวิตจากอุบัติเหตุจนเสียชีวิตไปพร้อมลูกในท้อง ต่างเรียกว่าผีตายทั้งกลม</strong></p>
+                                <a href="{{ url_for('Story_5') }}" class="btn btn-primary btn-block" title="Read More">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -230,15 +235,14 @@
                     <div class="col-xl-4 col-md-6 Story-item filter-product">
                         <div class="Story-wrap">
                             <a href="{{ url_for('Story_6') }}" class="glightbox"><img src="{{ url_for('static', filename='img/Story/str6.png') }}" class="img-fluid" alt=""></a>
-                            <div class="Story-info text-center">
+                            <div class="Story-info">
                                 <h4><a href="{{ url_for('Story_6') }}" title="More Details">ผีเปรต</a></h4>
-                                <p><strong>เป็นผีที่สูงเท่าต้นตาล มีปากเท่ารูเข็ม มือเท่าใบลาน เป็นผีที่สะท้อนความเชื่อในเรื่องการทำบาปทำกรรม โดยเฉพาะการทำบาปกับบุพการี-พ่อแม่ ตายไปจะตกนรก และกลายเป็นผีเปรตที่ทุกข์ทรมาน ร้องขอส่วนบุญเป็นที่น่าเวทนา ซึ่งผีเปรตไม่ได้มีแค่เฉพาะเมืองไทย</strong></p>
-                                <a href="{{ url_for('Story_6') }}" class="btn btn-primary" title="Read More">Read More</a>
+                                <p><strong>เป็นผีที่สูงเท่าต้นตาล มีปากเท่ารูเข็ม มือเท่าใบลาน เป็นผีที่สะท้อนความเชื่อในเรื่องการทำบาปทำกรรม โดยเฉพาะการทำบาปกับบุพการี-พ่อแม่ ตายไปจะตกนรก และกลายเป็นผีเปรตที่ทุกข์ทรมาน ร้องขอส่วนบุญเป็นที่น่าเวทนา ซึ่งผีเปรตไม่ได้มีแค่ไทย</strong></p>
+                                <a href="{{ url_for('Story_6') }}" class="btn btn-primary btn-block" title="Read More">Read More</a>
                             </div>
                         </div>
                     </div>
                     
-                
                 
         </section>
 
@@ -264,7 +268,7 @@
                     <a href="index.html" class="logo d-flex align-items-center">
                         <span>Ghost Story</span>
                     </a>
-                    <p>ที่สุดของความโหดมาจากชายผู้นี้ <strong>Xhi3r</strong> ez ez noob team</p>
+                    <p>ที่สุดของความหลอน ขนหัวลุก</p>
                     <div class="social-links d-flex mt-4">
                         <a href="https://twitter.com/Xhi3r" class="twitter"><i class="bi bi-twitter"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=100015127746814" class="facebook"><i
