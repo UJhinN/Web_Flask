@@ -119,6 +119,18 @@ def Story_2():
 def Story_3():
     return render_template("Story/Story_detail_3.html")
 
+@app.route('/Story_detail_4')
+def Story_4():
+    return render_template("Story/Story_detail_4.html")
+
+@app.route('/Story_detail_5')
+def Story_5():
+    return render_template("Story/Story_detail_5.html")
+
+@app.route('/Story_detail_6')
+def Story_6():
+    return render_template("Story/Story_detail_6.html")
+
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
