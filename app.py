@@ -103,9 +103,9 @@ def register():
 def blog():
     return render_template("blog.html")
 
-@app.route('/my_course')
-def my_course():
-    return render_template("my_course.html")
+@app.route('/history')
+def history():
+    return render_template("history.html")
 
 @app.route('/Story_detail_1')
 def Story_1():
