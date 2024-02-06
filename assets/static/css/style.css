@@ -1350,55 +1350,9 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Story item
---------------------------------------------------------------*/
-.product-container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 100px 40px 100px;
-  box-shadow: 0 10px 20px 10px rgba(108, 117, 125, 0.15);
-  border:3px;
-  border-radius: 30px;
-}
-
-.pic-section {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.pic-section img {
-  width: 70%;
-  height: auto;
-  border:#5270ff;
-  resize: auto;
-  
-}
-
-.product-detail {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-
-.product-features {
-  list-style-type: none;
-  padding: 0;
-}
-
-.product-features li {
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-
-
-
 
 .add-to-cart-button {
-  background-color: #1d64e7;
+  background-color: #e71d1d;
   color: #fff;
   border: none;
   padding: 8px 16px;
