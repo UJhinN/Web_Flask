@@ -82,6 +82,8 @@
                         
                         ไม่ว่าความหมายของธี่หยดจะเป็นอย่างไร แต่เสียงธี่หยดนั้นถือเป็นเสียงที่ชวนให้ขนหัวลุกและสร้างความหวาดกลัวให้กับผู้ฟังเสมอ</li>
                 </ul>
+                <button id="likeButton">Like<div id="likeCount">0</div></button>
+                
             </div>
         </div>
         </div>
@@ -95,7 +97,21 @@
     <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
+    <style>
+        #likeButton {
+            background-color: #007bff; /* เปลี่ยนสีพื้นหลังตามต้องการ */
+            color: #ffffff; /* เปลี่ยนสีตัวอักษรตามต้องการ */
+            padding: 20px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #likeButton:hover {
+            background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover ตามต้องการ */
+        }
+        </style>
 
 <!-- Story_1.html -->
 <!DOCTYPE html>
@@ -105,18 +121,19 @@
 </head>
 <body>
     <!-- Include header section if needed -->
-
-    <main id="main">
-        <section class="history" id="history">
-            <div class="container">
-                <div class="section-header">
-                    <h2>History</h2>
-                    <p>{{ history_info }}</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <script>
+        // กำหนดตัวแปรเพื่อเก็บค่า Like และแสดงผล
+        let likeCount = 0;
+        const likeButton = document.getElementById('likeButton');
+        const likeCountElement = document.getElementById('likeCount');
+        
+        // เพิ่ม Event Listener เมื่อคลิกที่ปุ่ม Like
+        likeButton.addEventListener('click', function() {
+            likeCount++;
+            likeCountElement.innerText = likeCount;
+        });
+        </script>
+        
     <!-- Include necessary scripts -->
 </body>
 </html>

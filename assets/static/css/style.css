@@ -1788,3 +1788,17 @@ a.backtomenu-btn:hover{
   line-height: 26px;
   color: #a20202;
 }
+
+.btn-watch-video:hover {
+    background-color: #007bff; /* เปลี่ยนสีพื้นหลังตามต้องการ */
+    color: #ff0000; /* เปลี่ยนสีตัวอักษรตามต้องการ */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.likeButton:hover {
+    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover ตามต้องการ */
+}
