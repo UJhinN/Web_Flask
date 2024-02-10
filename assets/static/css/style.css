@@ -1505,11 +1505,11 @@ section {
   padding-right: 10px;
   font-size: 20px;
   line-height: 0;
-  color: var(--color-primary);
+  color: #a62a2a;
 }
 
 .faq .q_a-button:not(.collapsed) {
-  color: var(--color-primary);
+  color: #b3b3b3;
   border-bottom: 0;
   box-shadow: none;
 }
