@@ -76,11 +76,38 @@
                 <ul class="product-features">
                     <li class="bi">ตำนาน ผีกระสือ เป็นผีชนิดหนึ่งที่เชื่อว่าเป็นผีผู้หญิงที่ตายแล้ว มักจะเป็นผู้หญิงที่ตายทั้งกลม หรือตายจากการถูกสาปแช่ง โดยเชื่อว่าวิญญาณของเธอจะออกมาหากินในเวลากลางคืน ลักษณะของกระสือจะเหมือนกับผู้หญิงธรรมดาทั่วไป แต่จะมีไส้ห้อยออกมาจากท้อง บางคนเชื่อว่าไส้ของกระสือจะเรืองแสงในยามค่ำคืน กระสือจะออกหากินของโสโครก เช่น ซากศพ ซากสัตว์ หรือของเสียต่างๆ อาหารที่โปรดปรานของกระสือคือเลือดสดๆ ของสัตว์หรือคน</li>
                 </ul>
+                <button id="likeButton">Like<div id="likeCount">0</div></button>
             </div>
         </div>
         </div>
     </main>
-
+    <script>
+        // กำหนดตัวแปรเพื่อเก็บค่า Like และแสดงผล
+        let likeCount = 0;
+        const likeButton = document.getElementById('likeButton');
+        const likeCountElement = document.getElementById('likeCount');
+        
+        // เพิ่ม Event Listener เมื่อคลิกที่ปุ่ม Like
+        likeButton.addEventListener('click', function() {
+            likeCount++;
+            likeCountElement.innerText = likeCount;
+        });
+        </script>
+<style>
+        #likeButton {
+            background-color: #007bff; /* เปลี่ยนสีพื้นหลังตามต้องการ */
+            color: #ffffff; /* เปลี่ยนสีตัวอักษรตามต้องการ */
+            padding: 20px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #likeButton:hover {
+            background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover ตามต้องการ */
+        }
+        </style>
 
 
     <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
