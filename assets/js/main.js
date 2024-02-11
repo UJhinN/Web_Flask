@@ -251,3 +251,16 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+<script>
+// กำหนดตัวแปรเพื่อเก็บค่า Like และแสดงผล
+let likeCount = 0;
+const likeButton = document.getElementById('likeButton');
+const likeCountElement = document.getElementById('likeCount');
+
+// เพิ่ม Event Listener เมื่อคลิกที่ปุ่ม Like
+likeButton.addEventListener('click', function() {
+    likeCount++;
+    likeCountElement.innerText = likeCount;
+});
+</script>
+
