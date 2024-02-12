@@ -8,16 +8,14 @@ first step install pacakage dependency.
 ```
 pip install -r requirements.txt
 ```
-
-and run flask application with
 ```
-flask --app web  run --debug
+git clone <repo-url>
 ```
 #
 Running and Viewing the Application
-#
 Navigate to the directory containing the project files.
 Run the app.py file:
+#
 ```
 python main.py
 ```
