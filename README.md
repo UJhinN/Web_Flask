@@ -4,12 +4,11 @@ website with pages showing various sections of stories related to ghosts in Thai
 Run this project with flask
 
 first step install pacakage dependency.
-
-```
-pip install -r requirements.txt
-```
 ```
 git clone <repo-url>
+```
+```
+pip install -r requirements.txt
 ```
 #
 Running and Viewing the Application
