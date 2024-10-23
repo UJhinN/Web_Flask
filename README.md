@@ -5,7 +5,7 @@ Run this project with flask
 
 first step install pacakage dependency.
 ```
-git clone <repo-url>
+git clone <[repo-url](https://github.com/UJhinN/Web_Flask.git)>
 ```
 ```
 pip install -r requirements.txt
