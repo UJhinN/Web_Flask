@@ -1,45 +1,41 @@
-# Learning Flask with Thai Ghost Story Website 🎓
+# Learning Flask with Bootstrap - Thai Ghost Story Website 🎓
 
-This project serves as a learning resource for Flask web development through building a Thai ghost story website. Perfect for beginners who want to understand Flask's core concepts through practical implementation.
+A learning project demonstrating how to build a responsive web application using Flask and Bootstrap. This project uses Thai ghost stories as engaging content while teaching web development fundamentals.
 
-## 📚 What You'll Learn
+## 📚 Technology Stack
 
-1. **Flask Basics**
-   - Route handling and URL mapping
-   - Template rendering with Jinja2
-   - Static file management
-   - Request handling (GET/POST methods)
+- **Backend**: Flask (Python Web Framework)
+- **Frontend**: Bootstrap 5 (CSS Framework)
+- **Database**: SQLAlchemy (ORM)
+- **Authentication**: Flask-Login
+- **Template Engine**: Jinja2
 
-2. **Database Integration**
-   - SQLAlchemy ORM setup
-   - Database models and relationships
-   - CRUD operations
+## 🎯 What You'll Learn
 
-3. **User Authentication**
-   - User registration and login system
-   - Password hashing
-   - Session management with Flask-Login
-   - Protected routes with decorators
+### 1. Flask Framework
+- Route handling and URL mapping
+- Template rendering with Jinja2
+- Form processing
+- User authentication
+- Database operations
 
-4. **Web Forms**
-   - Form handling
-   - Input validation
-   - Flash messages
-   - File uploads
-
-5. **Project Structure**
-   - Organizing Flask applications
-   - Blueprint implementation
-   - Configuration management
+### 2. Bootstrap 5 Integration
+- Responsive grid system
+- Navigation components
+- Forms styling
+- Cards and content containers
+- Modal dialogs
+- Responsive tables
+- Utility classes
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Basic Python knowledge
-- Understanding of HTML/CSS
-- Python 3.7 or higher installed
+- Python 3.7+
+- Basic understanding of HTML/CSS
+- Text editor or IDE
 
-### Installation Steps
+### Installation
 
 1. Clone the repository:
 ```bash
@@ -47,7 +43,7 @@ git clone https://github.com/UJhinN/Web_Flask.git
 cd Web_Flask
 ```
 
-2. Set up a virtual environment:
+2. Set up virtual environment:
 ```bash
 # Windows
 python -m venv venv
@@ -65,68 +61,128 @@ pip install -r requirements.txt
 
 ## 💻 Code Examples
 
-### 1. Route Creation
-```python
-@app.route('/blog')
-def blog():
-    return render_template("blog.html")
+### 1. Flask Template with Bootstrap
+```html
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navigation content -->
+    </nav>
+
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 ```
 
-### 2. User Authentication
-```python
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
-        # Authentication logic
+### 2. Form with Bootstrap Styling
+```html
+<!-- login.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title text-center">Login</h3>
+                <form method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
 ```
 
-### 3. Database Models
-```python
-class User(db.Model, UserMixin):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    password = db.Column(db.String(120), nullable=False)
-```
-
-## 📁 Project Structure Explanation
+## 📁 Project Structure
 ```
 Web_Flask/
-├── main.py              # Application entry point
-├── models.py            # Database models
-├── templates/           # HTML templates
-│   ├── Story/          # Story templates
-│   ├── login.html      # Authentication templates
+├── main.py                 # Flask application
+├── models.py              # Database models
+├── templates/
+│   ├── base.html         # Base template with Bootstrap
+│   ├── Story/            # Story templates
+│   │   ├── Story_detail_1.html
+│   │   └── ...
+│   ├── login.html        # Authentication templates
 │   └── ...
-└── assets/             # Static files
+└── assets/
+    └── static/           # Static files (CSS, JS, images)
 ```
 
-## 🎯 Learning Exercises
+## 🛠 Bootstrap Components Used
 
-1. **Basic Exercises**
-   - Add a new route for a contact page
-   - Create a new template
-   - Add form validation
+1. **Navigation**
+   - Responsive navbar
+   - Dropdown menus
+   - Navigation pills/tabs
 
-2. **Intermediate Challenges**
-   - Implement user comments
-   - Add image upload functionality
-   - Create an admin panel
+2. **Content Layout**
+   - Grid system
+   - Cards
+   - Containers
+   - Rows and columns
 
-3. **Advanced Projects**
-   - Add user roles and permissions
-   - Implement API endpoints
-   - Add search functionality
+3. **Forms**
+   - Input groups
+   - Form validation
+   - Custom styling
 
-## 🛠 Running the Application
+4. **Components**
+   - Modals
+   - Alerts
+   - Badges
+   - Buttons
+   - Icons
 
-1. Start the development server:
+## 💡 Learning Exercises
+
+### Basic Level
+1. Add a responsive navigation bar
+2. Create a grid-based layout
+3. Style forms using Bootstrap classes
+
+### Intermediate Level
+1. Implement modal dialogs
+2. Add carousel for story previews
+3. Create responsive tables
+
+### Advanced Level
+1. Custom Bootstrap theming
+2. Advanced component integration
+3. Responsive image galleries
+
+## 🚀 Running the Application
+
+1. Start the Flask server:
 ```bash
 python main.py
 ```
 
-2. Access the website at:
+2. Visit the website:
 ```
 http://localhost:5000
 ```
@@ -134,15 +190,35 @@ http://localhost:5000
 ## 📚 Additional Resources
 
 - [Flask Documentation](https://flask.palletsprojects.com/)
-- [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
-- [Flask-Login Documentation](https://flask-login.readthedocs.io/)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/)
+- [Bootstrap Examples](https://getbootstrap.com/docs/5.3/examples/)
+- [Flask-Bootstrap](https://bootstrap-flask.readthedocs.io/)
+
+## 🛠 Development Tips
+
+1. **Browser DevTools**
+   - Use for responsive design testing
+   - Debug Bootstrap classes
+   - Inspect element structure
+
+2. **Bootstrap Utilities**
+   - Spacing utilities (m-, p-)
+   - Flexbox utilities
+   - Text utilities
+   - Background utilities
+
+3. **Best Practices**
+   - Mobile-first approach
+   - Semantic HTML
+   - Consistent spacing
+   - Proper grid usage
 
 ## 🤝 Contributing
 
-Feel free to:
+Contributions to improve the project are welcome:
 1. Fork the repository
 2. Create your feature branch
-3. Submit a pull request with your improvements
+3. Submit a pull request
 
 ## 📝 License
 
