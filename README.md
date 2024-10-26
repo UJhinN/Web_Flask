@@ -213,13 +213,3 @@ http://localhost:5000
    - Consistent spacing
    - Proper grid usage
 
-## 🤝 Contributing
-
-Contributions to improve the project are welcome:
-1. Fork the repository
-2. Create your feature branch
-3. Submit a pull request
-
-## 📝 License
-
-This project is licensed under the MIT License.
